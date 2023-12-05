@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github - user - search - app</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="container header__container">
+        <a class="site-logo" href=""> devfinder </a>
+        <button class="site-btn" id="dark">
+          DARK
+          <img class="site-img" src="./img/moon.svg" alt="" />
+        </button>
+        <button class="site-btn dsp" id="light">
+          LIGHT
+          <img class="site-image" src="./img/sun.svg" alt="" />
+        </button>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="main">
+      <!-- search section start -->
+      <section class="search">
+        <div class="container search__container">
+          <form class="form">
+            <img class="search__icon" src="./img/search.svg" alt="" />
+            <input
+              name="search"
+              class="search__input"
+              type="search"
+              placeholder="Search GitHub username…"
+            />
+            <span class="xato3 dsc">No results</span>
+            <button class="search__btn">Search</button>
+          </form>
+        </div>
+      </section>
+      <!-- search section end -->
+      <!-- users section start -->
+      <section class="user">
+        <div class="user__container container">
+          <div class="user__content">
+            <div class="useron__content">
+              <img
+                class="user__img"
+                id="user__img"
+                src="./img/user.svg"
+                alt=""
+              />
+              <div class="useron__con">
+                <div class="user__lina">
+                  <div class="user__li">
+                    <h1 class="user__name" id="user__name">The Octocat</h1>
+
+                    <a href="" id="user__a" class="user__link">
+                      @<span id="user__log">octocat</span>
+                    </a>
+                  </div>
+                  <span class="user__data"
+                    >Joined <span id="user__day">25 Jan 2013</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="user__about" id="user__about">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+              odio. Quisque volutpat mattis eros.
+            </p>
+            <!-- user followers, repos and following ul start -->
+            <ul class="user__ul">
+              <li class="user__li">
+                Repos
+                <span class="user__li__sp" id="user__repos">8</span>
+              </li>
+              <li class="user__li">
+                Followers
+                <span class="user__li__sp" id="user__followers">3938</span>
+              </li>
+              <li class="user__li">
+                Following
+                <span class="user__li__sp" id="user__following">9</span>
+              </li>
+            </ul>
+            <!-- user ab and loc start -->
+            <ul class="loc__ul">
+              <li class="loc__li">
+                <a class="loc__a" href="">
+                  <img class="loc__img" src="./img/loc.svg" alt="" />
+                  <span class="loc__sp" id="user__loc">San Francisco</span>
+                </a>
+              </li>
+              <li class="loc__li">
+                <a class="loc__a" href="">
+                  <img class="loc__img" src="./img/twitter.svg" alt="" />
+                  <span class="loc__sp" id="user__twitter">Twitter</span>
+                </a>
+              </li>
+              <li class="loc__li">
+                <a href="" class="loc__a">
+                  <img class="loc__img" src="./img/url.svg" alt="" />
+                  <span class="loc__sp" id="user__blog"
+                    >https://github.blog</span
+                  >
+                </a>
+              </li>
+              <li class="loc__li">
+                <a href="" class="loc__a">
+                  <img class="loc__img" src="./img/company.svg" alt="" />
+                  <span class="loc__sp" id="user__company">Company</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- users section end -->
+    </main>
+    <!-- main end -->
+    <!-- js code start -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
